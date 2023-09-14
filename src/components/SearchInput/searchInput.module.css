@@ -24,6 +24,10 @@
   margin: 0 0.7rem;
 }
 
+.inputContainer img {
+  max-width: none;
+}
+
 .inputContainer button,
 .inputContainer button:hover {
   all: unset;
