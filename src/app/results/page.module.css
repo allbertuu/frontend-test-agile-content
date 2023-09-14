@@ -1,0 +1,12 @@
+.container {
+  flex: 1;
+  padding: 1rem;
+}
+
+/* Laptop */
+@media (min-width: 1024px) {
+  .container {
+    width: 45rem;
+    padding-left: 8rem;
+  }
+}

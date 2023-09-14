@@ -1,0 +1,34 @@
+.btnSearch {
+  border-radius: 4px;
+  border: none;
+  padding: 0.8em 1.2em;
+  font-weight: 600;
+  background-color: var(--gray);
+  color: var(--black);
+  cursor: pointer;
+  transition: background-color 0.15s;
+  text-decoration: none;
+}
+
+.btnSearch:focus {
+  outline: none;
+}
+
+.btnSearch:hover {
+  background-color: var(--gray-dark);
+}
+
+.btnSearch:active {
+  background-color: var(--gray-darker);
+}
+
+.btnSearchDisabled {
+  composes: btnSearch;
+  background-color: var(--gray-light);
+  color: var(--gray-dark);
+  pointer-events: none;
+}
+
+.btnSearchDisabled:hover {
+  background-color: var(--gray-light);
+}

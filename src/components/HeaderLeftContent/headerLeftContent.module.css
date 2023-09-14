@@ -1,0 +1,29 @@
+.searchHeader {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  width: 100%;
+}
+
+.searchHeader a {
+  display: flex;
+}
+
+.title {
+  font-size: 1rem;
+  font: inherit;
+}
+
+.googleImg {
+  min-width: 6rem;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .searchHeader {
+    flex-wrap: nowrap;
+    margin-right: 2rem;
+  }
+}

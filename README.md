@@ -1,34 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# frontend-test-agile-content
 
-## Getting Started
+A simple project to search for animals and display them in a list. It was developed as a test for **Agile Content**.  
+The project was built using NextJS, ReactJS, TypeScript and Cypress. Also it uses CI/CD with GitHub Actions and is deployed on Vercel.
 
-First, run the development server:
+## Run Locally
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+  git clone https://github.com/allbertuu/frontend-test-agile-content
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  cd frontend-test-agile-content
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Install dependencies
 
-## Learn More
+```bash
+  npm install # or npm i
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start the server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+  npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Running Tests (Cypress)
 
-## Deploy on Vercel
+To run tests, run the following command
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+  npm test
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Functional Requirements (what it should do)
+
+### Home page
+
+- A search input that allows you to search for animals.
+
+### Results page
+
+- A search input is displayed in the header to be able to search again.
+- When clicking on an item title, additional information will be displayed in a box.
+- If no results are found, a message should be displayed.
+- If no search term is used, another message should be displayed.
+
+## Business Rules (constraints or guidelines)
+
+- All data is created using [faker.js](https://github.com/faker-js/faker).
+- Animals are searched by both title and type.
+- The retrieved results will be displayed on the results page.
+- All styling has to be done without any external UI library.
+
+### Home page
+
+- Header and footer are just visual elements, they are not interactive.
+
+### Results page
+
+- Images are from random animals, so it’s ok if they don’t match the selected item.
+- All retrieved results are displayed as a list.
+
+## Tech Stack
+
+- NextJS
+- ReactJS
+- TypeScript
+- Cypress
+- Context API
+- CSS Modules
+
+I'm so glad for building this project, I hope you enjoy it! 😄

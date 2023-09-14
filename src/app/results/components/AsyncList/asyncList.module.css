@@ -1,0 +1,20 @@
+.item {
+  margin-bottom: 2rem;
+}
+
+.item h2 {
+  margin: 0.5rem 0;
+  color: #1d44d8;
+  font-weight: 400;
+}
+
+.item h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.item a {
+  color: var(--gray-even-darker);
+  text-decoration: none;
+  opacity: 0.9;
+}
