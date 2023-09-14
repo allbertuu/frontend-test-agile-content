@@ -48,7 +48,7 @@ export const fetchAnimal = async (animal: string) => {
 function filterAnimals(allAnimals: IAnimal[], animal: string) {
   return allAnimals.filter(
     (item) =>
-      item.type === animal ||
+      item.type.toString().toLowerCase() === animal.toLowerCase() ||
       /*
        ** important to say that the animal title is generated in execution time,
        ** so it's a matter of probability to filter by a specific title.
